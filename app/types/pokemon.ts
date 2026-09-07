@@ -1,7 +1,6 @@
-/* Estrutura de cada pokemon na listagem */
 export interface PokemonListItem {
     name: string,
-    url: string,
+    url: string
 }
 
 export interface PokemonListResponse {
@@ -9,4 +8,29 @@ export interface PokemonListResponse {
     next: string | null,
     previous: string | null,
     results: PokemonListItem[]
+}
+
+export interface PokemonAbility {
+    ability: {
+        name: string, 
+        url: string
+    };
+}
+
+export interface PokemonType {
+    type: {
+        name: string,
+        url: string, 
+    };
+}
+
+export interface PokemonSprites {
+    front_default: string | null;
+}
+
+export interface PokemonDetails {
+    name: string,
+    sprites: PokemonSprites,
+    abilities: PokemonAbility,
+    types: PokemonType[],
 }

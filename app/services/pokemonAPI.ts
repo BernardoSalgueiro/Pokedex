@@ -1,4 +1,4 @@
-import { error } from "console";
+import { error, log } from "console";
 import { PokemonListResponse } from "../types/pokemon";
 
 const BASE_URL = "https://pokeapi.co/api/v2";
